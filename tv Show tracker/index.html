@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Episode Tracker</title>
+</head>
+<body>
+<!--NavBar-->
+<header class="head">
+    <h2 class="Logo">Faisal Alyahya</h2>
+    <nav>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tracker</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+    </nav>
+
+    <a class = "cta" href="#"><button>Contact</button></a>
+</header>
+
+<!--Button and Title-->
+<div class="content">
+<div class="openBtn">
+    <button class="openButton" onclick="openForm()">+</button>
+  </div>
+  
+<h2 class="Title">Episode Tracker</h2>
+</div>
+
+
+<!--popup form-->
+<div class="container">
+<div class="loginPopup">
+    <div class="formPopup" id="popupForm">
+    <form  class="formContainer">
+     
+        <label for="show-img" >Insert Image</label>
+        <img>
+        <label for="Show-Name"><br/>Tv Show</label>
+        <input type="text" name="Show-Name" id="Show-Name" size="10" required>
+    
+
+        <label for="Episode-Count">Episodes<br/></label>
+        <input type="number" min="0" name="Episode-Count" id="Episode-Count" required>
+    
+        <label for="rating"><br/>Rating<br/></label>
+        <input type="number" name="rating" id="rating" min="0" max="10">
+    
+    
+    
+        <label for="Status"><br/>Status<br/></label>
+         <select  name="Status" id="Status" required>
+          <option value="Watching" class="Drop-Down">Watching</option>
+          <option value="Completed" class="Drop-Down">Completed</option>
+          <option value="Dropped" class="Drop-Down">Dropped</option>
+        </select> 
+    
+    
+        <button type="submit" class="btn" id="btn1">Add</button>
+        <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+</div>
+<!--Shows Tracked-->
+<div class="Container2">
+ <ul id="Tracked-Shows">
+    
+
+
+   
+ </ul>
+</div>
+
+</div>
+
+
+
+<script src="index.js"></script>
+</body>
+  
+
+</html>
